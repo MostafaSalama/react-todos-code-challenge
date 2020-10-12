@@ -9,6 +9,8 @@ export default function todos(state=[],action) {
       case UPDATE_TODO:
         return state.map(todo=>{
           return todo.id === action.payload.id ? action.payload : todo ;
-        })
+        });
+      default:
+        return state;
     }
 }
