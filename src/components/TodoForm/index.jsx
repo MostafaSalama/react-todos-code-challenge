@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from './styles.module.sass';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../../redux/action-creators';
 import { nanoid } from 'nanoid';
