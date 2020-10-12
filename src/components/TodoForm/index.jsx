@@ -18,6 +18,7 @@ function TodoForm() {
 				addTodo({
 					text,
 					id: nanoid(),
+          time:new Date().toLocaleString()
 				}),
 			);
 		}

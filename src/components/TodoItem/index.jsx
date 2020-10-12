@@ -15,11 +15,14 @@ function TodoItem({todo}) {
     dispatch(completeTODO(todo.id));
   }
   return (
-    <div className={styles.card}>
-      <h2 className={`${styles.title} ${completedClass}`}>{todo.text}</h2>
+    <article className={styles.card}>
+      <div className={styles.textContainer}>
+        <h2 className={`${styles.title} ${completedClass}`}>{todo.text}</h2>
+        <p className={styles.time}>{todo.time}</p>
+      </div>
       {!todo.completed &&  <CompleteButton onClick={completeTodo}>Complete</CompleteButton>}
       <DeleteButton onClick={deleteTodo}>Delete</DeleteButton>
-    </div>
+    </article>
   );
 }
 
