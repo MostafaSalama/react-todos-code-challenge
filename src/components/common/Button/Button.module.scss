@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 0;
+  margin-right: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all ease-in-out .15s;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.completeBtn {
+  @extend .btn;
+  background-color: hsla(120, 100%, 33%,0.8);
+  color: #fff
+}
+.completeBtn:hover {
+  background-color: hsla(120, 100%, 33%,1);
+
+}
+.deleteBtn {
+  @extend .btn;
+  background-color: hsla(0, 100%, 33%,0.8);
+  color: #fff;
+}
+.deleteBtn:hover {
+  background-color: hsla(0, 100%, 33%,1);
+}
+
