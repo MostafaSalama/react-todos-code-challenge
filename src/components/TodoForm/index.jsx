@@ -21,6 +21,7 @@ function TodoForm() {
           time:new Date().toLocaleString()
 				}),
 			);
+			setText('');
 		}
 	}
 	return (
