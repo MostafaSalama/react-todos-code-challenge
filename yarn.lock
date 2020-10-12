@@ -9167,6 +9167,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.1.12":
+  version: 3.1.12
+  resolution: "nanoid@npm:3.1.12"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: dc51417babadca4b00c2126ac0bc1c01e842e3c40edda2d3e1da40e8aae4d691a2a0b9d8e9c3a8cdb16133345a47f9135f0d0eef85a66ad31711ad3d908050e4
+  languageName: node
+  linkType: hard
+
 "nanomatch@npm:^1.2.9":
   version: 1.2.13
   resolution: "nanomatch@npm:1.2.13"
@@ -11631,6 +11640,7 @@ fsevents@^1.2.7:
   resolution: "react-todos-code-challenge@workspace:."
   dependencies:
     eslint-config-google: ^0.14.0
+    nanoid: ^3.1.12
     node-sass: ^4.14.1
     prop-types: ^15.7.2
     react: ^16.13.1
