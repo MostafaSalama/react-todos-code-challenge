@@ -1,13 +1,14 @@
 import React from 'react';
 
 import styles from './styles.module.sass';
+import {CompleteButton, DeleteButton} from "../common/Button";
 
 function TodoItem({todo}) {
   return (
     <div className={styles.card}>
       <h2 className={styles.title}>{todo.text}</h2>
-      <button className={styles.completeBtn}>Complete</button>
-      <button className={styles.deleteBtn}>Delete</button>
+      <CompleteButton onClick={null}>Complete</CompleteButton>
+      <DeleteButton onClick={null}>Delete</DeleteButton>
     </div>
   );
 }
