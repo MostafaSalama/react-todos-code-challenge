@@ -1,4 +1,4 @@
-import {ADD_TODO, REMOVE_TODO, UPDATE_TODO} from "./action-types";
+import {ADD_TODO, COMPLETE_TODO, REMOVE_TODO, UPDATE_TODO} from "./action-types";
 
 export function addTodo(payload) {
     return {
@@ -16,5 +16,11 @@ export function UpdateTodo(payload) {
     return {
       type:UPDATE_TODO,
       payload
+    }
+}
+export function completeTODO(id) {
+    return {
+      type:COMPLETE_TODO,
+      id
     }
 }

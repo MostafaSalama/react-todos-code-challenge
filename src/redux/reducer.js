@@ -1,4 +1,4 @@
-import {ADD_TODO, REMOVE_TODO, UPDATE_TODO} from "./action-types";
+import {ADD_TODO, COMPLETE_TODO, REMOVE_TODO, UPDATE_TODO} from "./action-types";
 
 export default function todos(state=[],action) {
     switch (action.type) {
@@ -10,6 +10,15 @@ export default function todos(state=[],action) {
         return state.map(todo=>{
           return todo.id === action.payload.id ? action.payload : todo ;
         });
+      case COMPLETE_TODO:
+        return state.map(todo=> {
+          if (todo.id === action.id) {
+            return {
+              ...todo,completed:true
+            }
+          }
+          return todo ;
+        })
       default:
         return state;
     }
