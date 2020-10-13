@@ -17,6 +17,9 @@ const App = ()=>{
          <Route path='/completed' component={CompletedTodos} />
          <Route path='/in-progress' component={InProgressTodos} />
          <Route path='/edit/:id' component={EditTodo} />
+         <Route path='*'>
+           <h1>Page Not Found</h1>
+         </Route>
        </Switch>
     </React.Fragment>
   )
