@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addTodo } from '../../redux/action-creators';
 import { nanoid } from 'nanoid';
 import Input from '../common/Input';
+import {formatDate} from "../../util";
 function TodoForm() {
 	const [text, setText] = useState('');
 	const dispatch = useDispatch();
@@ -18,7 +19,7 @@ function TodoForm() {
 				addTodo({
 					text,
 					id: nanoid(),
-          time:new Date().toLocaleString()
+          time:formatDate(new Date())
 				}),
 			);
 			setText('');
