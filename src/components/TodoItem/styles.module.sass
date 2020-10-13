@@ -2,31 +2,26 @@
     box-sizing: border-box
     width: 100%
     padding: 25px 30px
-    background-color: #eee
+    background-color: hsl(0, 0%, 98%)
     border: 1px solid #888
     margin-bottom: 25px
 
 .title
     margin: 0 0 40px
     font-family: sans-serif
+    word-break: break-all
 
-@mixin button()
-    display: inline-block
-    padding: 10px 20px
-    border-radius: 0
-    border: 0
-    margin-right: 20px
-    font-size: 1rem
-    &:last-child
-        margin-right: 0
-
-.completeBtn
-    @include button()
-    background-color: #0a0
-    color: #fff
-
-.deleteBtn
-    @include button()
-    background-color: #a00
-    color: #fff
-
+.completed
+  text-decoration-line: line-through
+  opacity: 0.3
+.textContainer
+  display: flex
+  flex-direction: row
+  position: relative
+.time
+  justify-self: flex-end
+  position: absolute
+  right: 0
+  bottom: 0
+  font-style: italic
+  opacity: 0.6

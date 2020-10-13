@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styles from './styles.module.sass';
-
+import {Link} from "react-router-dom";
+import Routes from "../Routes";
 function Header({title}) {
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>
-        {title}
-      </h1>
+     <Link to='/'>
+       <h1 className={styles.title}>
+         {title}
+       </h1>
+     </Link>
+      <Routes/>
     </header>
   );
 }

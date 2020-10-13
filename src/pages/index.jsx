@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from '../components/Header';
 import ContentContainer from '../components/ContentContainer';
 import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
+import {useSelector} from "react-redux";
 
 function IndexPage() {
+  const todos = useSelector(state=>state.todos)
   return (
     <main>
-      <Header />
       <ContentContainer>
         <TodoForm />
-        <TodoList />
+        <TodoList todos={todos} />
       </ContentContainer>
     </main>
   );

@@ -1,0 +1,26 @@
+.nav
+  align-self: center
+  position: absolute
+  right: 20px
+  @media screen and (max-width: 530px)
+    position: initial
+
+.list
+  display: flex
+  flex-direction: row
+  @media screen and (max-width: 530px)
+    padding: 10px
+    > li
+      margin: 10px
+  > li
+    margin-left: 10px
+    > a
+      text-decoration: none
+      padding: 10px
+      background-color: hsla(216, 85%, 34%,0.6)
+      color: #ffffff
+      &:hover
+        background-color: hsla(216, 85%, 34%,1)
+
+.active
+  background-color: hsla(216, 85%, 34%,1)
