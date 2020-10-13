@@ -4,3 +4,9 @@ html {
 *,*::before,*::after {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
