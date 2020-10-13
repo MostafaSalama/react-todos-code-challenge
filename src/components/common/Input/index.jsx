@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import PropTypes from 'prop-types';
 import styles from './input.module.css';
 const Input = ({ onChange, type, ...props }) => {
-	return <input className={styles.input} onChange={onChange} type={type} {...props} />;
+  const ref = useRef(null)
+  useEffect(()=>{
+    console.log(ref.current)
+    ref.current.focus();
+  },[])
+	return <input ref={ref} className={styles.input} onChange={onChange} type={type} {...props} />;
 };
 Input.propTypes = {
 	onChange: PropTypes.func.isRequired,
