@@ -8,8 +8,9 @@ const activeStyle = {
 }
 const Routes = ()=>{
   return (
-   <nav>
+   <nav className={styles.nav}>
      <ul className={styles.list}>
+       <li><NavLink exact to='/' activeStyle={activeStyle}>Home</NavLink></li>
        <li><NavLink to='/all' activeStyle={activeStyle}>All</NavLink></li>
        <li><NavLink to='/completed'  activeStyle={activeStyle}>Completed</NavLink></li>
        <li><NavLink to='/in-progress'  activeStyle={activeStyle}>In Progress</NavLink></li>
