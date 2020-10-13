@@ -1,6 +1,17 @@
+.nav
+  align-self: center
+  position: absolute
+  right: 20px
+  @media screen and (max-width: 530px)
+    position: initial
+
 .list
   display: flex
   flex-direction: row
+  @media screen and (max-width: 530px)
+    padding: 10px
+    > li
+      margin: 10px
   > li
     margin-left: 10px
     > a
