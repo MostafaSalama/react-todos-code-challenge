@@ -12,7 +12,7 @@ export function removeTodo(id) {
       id
     }
 }
-export function UpdateTodo(payload) {
+export function updateTodo(payload) {
     return {
       type:UPDATE_TODO,
       payload
