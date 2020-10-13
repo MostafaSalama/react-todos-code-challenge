@@ -5,6 +5,7 @@ import IndexPage from "./pages";
 import AllTodos from "./pages/AllTodos";
 import CompletedTodos from "./pages/CompletedTodos";
 import InProgressTodos from "./pages/InProgressTodos";
+import EditTodo from "./pages/EditTodo";
 
 const App = ()=>{
   return (
@@ -15,6 +16,7 @@ const App = ()=>{
          <Route path='/all' component={AllTodos} />
          <Route path='/completed' component={CompletedTodos} />
          <Route path='/in-progress' component={InProgressTodos} />
+         <Route path='/edit/:id' component={EditTodo} />
        </Switch>
     </React.Fragment>
   )
