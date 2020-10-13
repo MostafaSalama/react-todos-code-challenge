@@ -1,14 +1,15 @@
 import React from 'react';
 import TodoItem from '../TodoItem';
 import {useSelector} from "react-redux";
-
-function TodoList() {
-  const todos = useSelector(state=>state.todos);
+import PropTypes from 'prop-types'
+function TodoList({todos}) {
   return (
     <section>
-      {todos.map(todo=><TodoItem key={todo.id} todo={todo} />)}
+      {todos?.map(todo=><TodoItem key={todo.id} todo={todo} />)}
     </section>
   );
 }
-
+TodoList.propTypes = {
+  todos:PropTypes.array
+}
 export default TodoList;
