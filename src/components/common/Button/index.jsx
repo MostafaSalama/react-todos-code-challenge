@@ -21,7 +21,14 @@ CompleteButton.propTypes = {
 export const DeleteButton = ({onClick,children,...props})=>{
   return <button className={styles.deleteBtn} onClick={onClick} {...props}>{children}</button>
 }
-CompleteButton.propTypes = {
+DeleteButton.propTypes = {
+  onClick : PropTypes.func.isRequired,
+  children:PropTypes.node
+}
+export const EditButton = ({onClick,children,...props})=>{
+  return <button className={styles.editBtn} onClick={onClick} {...props}>{children}</button>
+}
+EditButton.propTypes = {
   onClick : PropTypes.func.isRequired,
   children:PropTypes.node
 }

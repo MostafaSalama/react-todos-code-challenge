@@ -28,4 +28,8 @@
 .deleteBtn:hover {
   background-color: hsla(0, 100%, 33%,1);
 }
-
+.editBtn {
+  @extend .btn;
+  background-color: rgb(13, 72, 160);
+  color: #ffffff;
+}

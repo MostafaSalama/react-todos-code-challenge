@@ -1,6 +1,5 @@
 import React from 'react';
 import TodoItem from '../TodoItem';
-import {useSelector} from "react-redux";
 import PropTypes from 'prop-types'
 function TodoList({todos}) {
   return (
