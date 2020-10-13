@@ -24,3 +24,12 @@ export function getCompletedTodos(state) {
 export function getInProgressTodos(state) {
     return state.todos.filter(todo=>!todo.completed);
 }
+
+/**
+ * return a closure function to get a todo with a specific id
+ * @param id {string}
+ * @returns {function(*): any}
+ */
+export function getTodoWithId(id) {
+    return state => state.todos.find(todo=>todo.id === id) ;
+}
