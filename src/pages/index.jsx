@@ -7,7 +7,6 @@ import TodoList from '../components/TodoList';
 function IndexPage() {
   return (
     <main>
-      <Header />
       <ContentContainer>
         <TodoForm />
         <TodoList />
