@@ -6,3 +6,21 @@
 export function formatDate(date) {
     return date.toLocaleString() ;
 }
+
+/**
+ * return all the completed todos
+ * @param state
+ * @returns {[]}
+ */
+export function getCompletedTodos(state) {
+    return state.todos.filter(todo=>todo.completed) ;
+}
+
+/**
+ * return in progress todos
+ * @param state
+ * @returns {[]}
+ */
+export function getInProgressTodos(state) {
+    return state.todos.filter(todo=>!todo.completed);
+}
